@@ -1,3 +1,4 @@
+/* Declaring Color Variables */
 :root {
     --Dark_cyan: hsl(158, 36%, 37%);
     --Cream: hsl(30, 38%, 92%);
@@ -5,6 +6,8 @@
     --Dark_grayish_blue: hsl(228, 12%, 48%);
     --White: hsl(0, 0%, 100%);
 }
+
+/* Base Styling */
 
 * {
     box-sizing: border-box;
@@ -14,6 +17,8 @@
     margin: 0;
     padding: 0;
 }
+
+/* Main layout and styling (Mobile @375px) */
 
 body {
     align-items: center;
@@ -93,4 +98,50 @@ button {
     justify-content: center;
     margin: 1.3rem 1.5rem;
     width: 300px;
+}
+
+/* Desktop Layout */
+
+@media screen and (min-width: 768px) {
+
+    main {
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+        height: 450px;
+        width: 300px;
+    }
+
+    main>img {
+        display: none;
+    }
+
+    .desktop-image {
+        background-image: url(images/image-product-desktop.jpg);
+        background-size: contain;
+        border-top-left-radius: 1rem;
+        border-bottom-left-radius: 1rem;
+        height: 450px;
+        width: 300px;
+    }
+
+    h3 {
+        margin-top: 2.57rem;
+    }
+
+    main>p {
+        font-size: 1.1rem;
+
+    }
+
+    button {
+        height: 48px;
+        width: 236px;
+        margin: 2.28rem;
+    }
+
+    button:hover {
+        background-color: var(--Very_dark_blue);
+        cursor: pointer;
+    }
+
 }
