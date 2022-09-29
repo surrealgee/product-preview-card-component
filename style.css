@@ -32,23 +32,26 @@ body {
 main {
     background-color: var(--White);
     border-radius: 1rem;
-    height: 615px;
-    width: 345px;
+    height: 44rem;
+    width: 25rem;
 }
 
-main>img {
-    height: 240px;
+picture>img {
+    height: 16rem;
     width: 100%;
     border-top-left-radius: 1rem;
     border-top-right-radius: 1rem;
 }
 
-h3 {
+.text-container > * {
+    margin: 1.3rem 1.5rem;
+}
+
+.product-label {
     color: var(--Dark_grayish_blue);
     font-weight: 500;
     letter-spacing: 0.3rem;
     line-height: 0.7;
-    margin: 1.3rem 1.5rem;
     text-transform: uppercase;
 }
 
@@ -56,14 +59,12 @@ h1 {
     color: var(--Very_dark_blue);
     font-family: 'Fraunces', sans-serif;
     font-size: 2.5rem;
-    margin: 1.3rem 1.5rem;
 }
 
-main>p {
+.text-container > p {
     color: var(--Dark_grayish_blue);
-    font-size: 1.04rem;
+    font-size: 1.05rem;
     line-height: 1.6;
-    margin: 1.3rem 1.5rem;
 }
 
 .price {
@@ -71,7 +72,6 @@ main>p {
     display: flex;
     gap: 1.5rem;
     justify-content: flex-start;
-    margin: 1.3rem 1.5rem;
 }
 
 .new-price {
@@ -82,7 +82,6 @@ main>p {
 
 .old-price {
     color: var(--Dark_grayish_blue);
-    text-decoration: line-through;
 }
 
 button {
@@ -94,10 +93,9 @@ button {
     display: flex;
     font-weight: 700;
     gap: 1.4rem;
-    height: 50px;
+    height: 3.42rem;
     justify-content: center;
-    margin: 1.3rem 1.5rem;
-    width: 300px;
+    width: 21.42rem;
 }
 
 /* Desktop Layout */
@@ -105,38 +103,36 @@ button {
 @media screen and (min-width: 768px) {
 
     main {
-        border-top-left-radius: 0;
-        border-bottom-left-radius: 0;
-        height: 450px;
-        width: 300px;
+        display: flex;
+        height: 32.14rem;
+        width: 42.85rem;
     }
 
-    main>img {
-        display: none;
-    }
-
-    .desktop-image {
-        background-image: url(images/image-product-desktop.jpg);
-        background-size: contain;
+    picture > img {
         border-top-left-radius: 1rem;
+        border-top-right-radius: 0;
         border-bottom-left-radius: 1rem;
-        height: 450px;
-        width: 300px;
+        height: 32.14rem;
+        width: 21.42rem;
     }
 
-    h3 {
+    .text-container > * {
+        margin: 1.3rem 2.28rem;
+    }
+
+    .product-label {
         margin-top: 2.57rem;
     }
 
-    main>p {
-        font-size: 1.1rem;
+    .text-container > p {
+        font-size: 1rem;
 
     }
 
     button {
-        height: 48px;
-        width: 236px;
-        margin: 2.28rem;
+        height: 3.42rem;
+        width: 16.85rem;
+        margin: 2.28rem
     }
 
     button:hover {
